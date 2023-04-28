@@ -1,7 +1,7 @@
 Iris-message-processor
 ========
 
-Iris-message-processor is a fully distributed Go application meant to replace the sender functionality of [Iris](https://github.com/linkedin/iris/tree/experimental) and provide reliable, scalable, and extesnible incident and out of band message processing and sending.
+Iris-message-processor is a fully distributed Go application meant to replace the sender functionality of [Iris](https://github.com/linkedin/iris/tree/experimental) and provide reliable, scalable, and extensible incident and out of band message processing and sending.
 
 Iris-message-processor is meant to be used with the [experimental-sender branch](https://github.com/linkedin/iris/tree/experimental) of Iris. Make sure you have set that up first before running Iris-message-processor.
 
@@ -29,7 +29,7 @@ The application configurations are defined in iris-message-processor/config/cfg.
 - "MySQLDBName":"iris_message_processor",
 
 ### Iris configurations:
-1. Make sure you have first configured an run an instance of Iris from the [experimental-sender branch](https://github.com/linkedin/iris/tree/experimental)
+1. Make sure you have first configured and run an instance of Iris from the [experimental-sender branch](https://github.com/linkedin/iris/tree/experimental)
 1. create a new application "iris-message-processor" and copy the API key into the "IrisKey" configuration
 
 - "IrisBaseURL":"http://127.0.0.1:16649",
@@ -38,13 +38,13 @@ The application configurations are defined in iris-message-processor/config/cfg.
 
 ### Debug/testing settings:
 
-1. By default the configs are set up with dryrun and debug settings enable, you will need to disable these in production but they can be used for testing
+1. By default the configs are set up with dryrun and debug settings enabled, you will need to disable these in production but they can be used for testing
 
 - "MetricsDryRun": true, // with this setting enabled IMP will skip emitting metrics
 - "SenderDryRun":true, // with this setting enabled messages will be sent with the dummyVendor that just logs/stores the messages but does not actually send them
 - "IrisDryRun":true, // with this setting enabled IMP will not advance the steps of an iris incident
 - "StorageDryRun":true, // with this setting enabled IMP will not persist messages to the DB
-- "DebugAuth": true, // with this setting enabled will not enforce HMAC authentications
+- "DebugAuth": true, // with this setting enabled IMP will not enforce HMAC authentication for its API
 - "DebugLogging": true // with this setting enabled IMP will set the logging level to debug
 
 Run
@@ -67,10 +67,10 @@ go test -v ./...
 API
 -----
 
-The Iris-message-processor API is mainly used for interfacing with Iris but also provides a general healthchecking endpoint for monitoring a running instance of Iris-message-processor. With the exception of the "admin" endpoint the API should be interacted with ditectly, instead cliets should query Iris's api which will reach out to Iris-message-processor when needed.
+The Iris-message-processor API is mainly used for interfacing with Iris but also provides a general health checking endpoint for monitoring a running instance of Iris-message-processor. With the exception of the "admin" endpoint the API should not be interacted with directly, instead clients should query Iris's API which will reach out to Iris-message-processor when needed.
 
 ### Endpoints:
 
 #### /admin
 
-This endpoint is used for healthchecking. It returns "GOOD" if the API is ready to serve requests and "BAD" otherwise.
+This endpoint is used for health checking. It returns "GOOD" if the API is ready to serve requests and "BAD" otherwise.
