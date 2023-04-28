@@ -1,0 +1,65 @@
+{
+   "error":null,
+   "users":{
+      "testuser2":{
+         "name":"testuser2",
+         "admin":false,
+         "template_overrides":[
+         ],
+         "category_overrides":{
+         },
+         "modes":{
+            "high":"sms",
+            "medium":"slack"
+         },
+         "device":[
+         ],
+         "per_app_modes":{
+         },
+         "teams":[
+         ],
+         "contacts":{
+            "sms":"+1 443-123-1234",
+            "call":"+1 443-123-1234",
+            "email":"user_mm@test.com",
+            "slack":"user_mm"
+         }
+      },
+      "testuser":{
+         "name":"testuser",
+         "admin":true,
+         "template_overrides":[
+            "sms"
+         ],
+         "category_overrides":{
+            "iris-test":{
+               "application_name":"iris-test",
+               "mode":"drop",
+               "category":"ignorable notification"
+            }
+         },
+         "modes":{
+         },
+         "device":[
+            {
+               "registration_id":"dummy",
+               "user_id":123456,
+               "platform":"Android"
+            }
+         ],
+         "per_app_modes":{
+            "crt":{
+               "urgent":"slack"
+            }
+         },
+         "teams":[
+         ],
+         "contacts":{
+            "sms":"+1 858-123-1234",
+            "call":"+1 858-123-1234",
+            "email":"user_dcw@test.com",
+            "slack":"user_dcw"
+         }
+      }
+   }
+}

@@ -1,0 +1,63 @@
+{
+  "id": 4973,
+  "name": "alerts Default",
+  "active": 1,
+  "creator": "user_dcw",
+  "created": 1622047753,
+  "content": {
+    "alerts": {
+      "sms": {
+        "subject": "",
+        "body": "Zone(s): {% for z in zones %} \"{{z}}\"{% endfor %}\n\nThe following alert has been triggered in {{fabric}}: {{filename}}/{{name}}\n\nReply with \"{{iris.message_id}} claim\" to claim the incident."
+      },
+      "im": {
+        "subject": "",
+        "body": "Zone(s): {% for z in zones %} \"{{z}}\"{% endfor %}\n\nThe following alert has been triggered in {{fabric}}: {{filename}}/{{name}}\n\nReply with \"{{iris.message_id}} claim\" to claim the incident."
+      },
+      "call": {
+        "subject": "",
+        "body": "Zone(s): {% for z in zones %} \"{{z}}\"{% endfor %}\n \nThe following alert has been triggered in {{fabric}}: {{filename}}/{{name}}"
+      },
+      "email": {
+        "subject": "[alerts] ({{fabric}}) {{filename}}/{{name}}",
+        "body": "Zone(s): {% for z in zones %} \"{{z}}\"{% endfor %}\n\nThe following alert has been triggered: {{filename}}/{{name}}\n\nThe following nodes are active:\n{% for node in nodes %}\n  * {{node[0]}}, {{node[1]}}\n{% endfor %}\n{% if metanodes %}\nThe following metanodes are active:\n{% for node in metanodes %}\n  * {{node[0]}}, {{node[1]}}\n{% endfor %}{% endif %}\n\nThe nodes can be suppressed from [console]({{console_url}}).\n\nMetric details can be viewed from [graph]({{graph_url}}).\n\nIncident details can be viewed from [Iris](https://irisurl/incidents/{{iris.incident_id}}).\n\nReply with \"{{iris.message_id}} claim\" to claim the incident."
+      },
+      "slack": {
+        "subject": "",
+        "body": "Zone(s): {% for z in zones %} \"{{z}}\"{% endfor %}\n\nThe following alert has been triggered in {{fabric}}: {{filename}}/{{name}}"
+      }
+    },
+    "iris-message-processor": {
+      "sms": {
+        "subject": "",
+        "body": "test"
+      },
+      "im": {
+        "subject": "",
+        "body": "test"
+      },
+      "call": {
+        "subject": "",
+        "body": "test"
+      },
+      "email": {
+        "subject": "testsubject",
+        "body": "test"
+      },
+      "slack": {
+        "subject": "",
+        "body": "test"
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": 243,
+      "name": "iris-test-plan"
+    },
+    {
+      "id": 710,
+      "name": "sre-infra-sla1-test"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+[
+    {
+        "role": "mailing-list",
+        "target": "user_ks",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-0000",
+        "mode": "call",
+        "mode_id": 26,
+        "body": "call template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_bw",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-0001",
+        "mode": "sms",
+        "mode_id": 8,
+        "body": "sms template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_kt",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-0002",
+        "mode": "sms",
+        "mode_id": 8,
+        "body": "sms template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_rw",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-0003",
+        "mode": "sms",
+        "mode_id": 8,
+        "body": "sms template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_jw",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-0004",
+        "mode": "sms",
+        "mode_id": 8,
+        "body": "sms template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_mm",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-00005",
+        "mode": "sms",
+        "mode_id": 8,
+        "body": "sms template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_mh",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-0006",
+        "mode": "sms",
+        "mode_id": 8,
+        "body": "sms template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_co",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-0007",
+        "mode": "sms",
+        "mode_id": 8,
+        "body": "sms template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_dc",
+        "subject": " subject",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "low",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "dcepeda@linkedin.com",
+        "mode": "email",
+        "mode_id": 35,
+        "body": "email template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_ew",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-0008",
+        "mode": "sms",
+        "mode_id": 8,
+        "body": "sms template variable: successfully rendered the template variable",
+        "template_id": 4976
+    },
+    {
+        "role": "mailing-list",
+        "target": "user_ak",
+        "subject": "",
+        "template": "iris-message-processor-template",
+        "context": {
+            "var": "successfully rendered the template variable",
+            "iris": {}
+        },
+        "priority": "high",
+        "priority_id": 17,
+        "application": "iris-message-processor",
+        "destination": "+1 123-456-0009",
+        "mode": "sms",
+        "mode_id": 8,
+        "body": "sms template variable: successfully rendered the template variable",
+        "template_id": 4976
+    }
+]

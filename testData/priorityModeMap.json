@@ -1,0 +1,1 @@
+{"priority_map":{"urgent":8,"high":17,"medium":26,"low":35},"mode_id_map":{"call":26,"drop":41,"email":35,"error":0,"im":17,"slack":59,"sms":8},"default_priority_map":{"urgent":"call","high":"sms","medium":"email","low":"email"}}

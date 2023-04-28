@@ -1,0 +1,42 @@
+[
+  {
+    "id": 29,
+    "name": "test-1",
+    "threshold_window": 900,
+    "threshold_count": 10,
+    "aggregation_window": 300,
+    "aggregation_reset": 300
+  },
+  {
+    "id": 53,
+    "name": "test-2",
+    "threshold_window": 900,
+    "threshold_count": 10,
+    "aggregation_window": 300,
+    "aggregation_reset": 300
+  },
+  {
+    "id": 71,
+    "name": "test-3",
+    "threshold_window": 900,
+    "threshold_count": 10,
+    "aggregation_window": 300,
+    "aggregation_reset": 300
+  },
+  {
+    "id": 81,
+    "name": "test-4",
+    "threshold_window": 900,
+    "threshold_count": 10,
+    "aggregation_window": 300,
+    "aggregation_reset": 300
+  },
+  {
+    "id": 89,
+    "name": "test-5",
+    "threshold_window": 900,
+    "threshold_count": 10,
+    "aggregation_window": 300,
+    "aggregation_reset": 300
+  }
+]

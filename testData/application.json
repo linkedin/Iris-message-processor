@@ -1,0 +1,39 @@
+{
+  "name": "alerts",
+  "context_template": "{{#context}}\n<div style=\"text-align: center;\">\n    <a href=\"{{console_url}}\" style=\"margin-right: 10px;\">{{name}}</a>\n    <div style=\"margin-bottom: 10px;\">\n      <small>\n        <span style=\"margin-right: 10px;\">\n          <span class=\"light\">Fabric:</span> {{fabric}}\n        </span>\n        <span>\n          <span class=\"light\">Zones:</span> {{zones}}\n        </span>\n      </small>\n    </div>\n    {{#if filename}}\n    <div class=\"alert-info\">\n      <p><span class=\"light\">Dashboard:</span> {{filename}}</p>\n      {{#if graph_image_url}}\n      <a href=\"{{graph_url}}\">\n        <img width=\"480\" height=\"115\" alt=\"graph-image\" src=\"{{graph_image_url}}\">\n      </a>\n      {{/if}}\n    {{else}}\n    <div class=\"alert-info\">\n    {{/if}}\n    {{#if zone_nodes}}\n      <p><small><span class=\"light\">Graphs:</span> {{#each zone_nodes}} <a href=\"{{this.[1]}}\">{{this.[0]}}</a> {{/each}}</small></p>\n    {{else if nodes}}\n      {{#if graph_image_url}}\n        <p><small><span class=\"light\">Nodes:</span> {{#each nodes}} {{this}} {{/each}}</small></p>\n      {{else}}\n        <p><small><span class=\"light\">Nodes:</span> {{#each nodes}} <a href=\"{{this.[1]}}\">{{this.[0]}}</a> {{/each}}</small></p>\n      {{/if}}\n    {{/if}}\n    {{#if notes}}\n      <p>Notes: {{notes}}</p>\n    {{/if}}\n    {{#if itr_url}}\n      <a href=\"{{itr_url}}\" style=\"margin-right: 10px;\">Click here to view ITR</a>\n    {{/if}}\n  </div>\n</div>\n{{/context}}",
+  "sample_context": "{\n  \"console_url\": \"https://alerts.com/#/alertdef/fabric/production?alertdef=free%20memory&filename=metricsfoo\",\n  \"graph_url\": \"http://graph.com/dashboard/metricsfoo/graph/free%20memory?fabrics=production&timezone=US/Pacific\",\n  \"fabric\": \"production\",\n  \"filename\": \"metricsfoo\",\n  \"graph_image_url\": \"http://host:2277/H0tO6poKcK.png\",\n  \"metanodes\": [\n    [\"execution_time.metanode1\", \"threshold: 72 is greater than the max (65)\"],\n    [\"execution_time.metanode2\", \"threshold: 72 is greater than the max (65)\"]\n  ],\n  \"name\": \"Sample Test Alert\",\n  \"nodes\": [\n    [\"execution_time.mock1.com\", \"threshold: 72 is greater than the max (65)\"],\n    [\"execution_time.mock2.com\", \"threshold: 84 is greater than the max (65)\"]\n  ],\n  \"notes\": \"This is a note\",\n  \"zones\":[\"zone1\", \"zone2\"],\n  \"zone_nodes\": [\n    [\"zone_node_1\",\n      \"https://alerts.com/#/alertdef/fabric/production?alertdef=alert%20SuppressionDB%20uwsgi%20500%20responses&filename=alert\",\n      \"http://graph.com/dashboard/alert/graph/alert%20Alerting%20-%20Alert%20Error%20Rate?fabrics=production&timezone=US%2FPacific\",\n      \"http://graph.com/api/v2/img/dashboard/alert/graph/alert%20Alerting%20-%20Alert%20Error%20Rate?fabrics=production&legend=false&show_alert&start=1528123709&end=1528152509&height=80&width=400&as_png&timezone=US/Pacific\"\n    ],\n    [\"zone_node_2\",\n      \"https://alerts.com/#/alertdef/fabric/production?alertdef=alert%20SuppressionDB%20uwsgi%20500%20responses&filename=alert\",\n      \"http://graph.com/dashboard/alert/graph/alert%20Alerting%20-%20Alert%20Error%20Rate?fabrics=production&timezone=US%2FPacific\",\n      \"http://graph.com/api/v2/img/dashboard/alert/graph/alert%20Alerting%20-%20Alert%20Error%20Rate?fabrics=production&legend=false&show_alert&start=1528123709&end=1528152509&height=80&width=400&as_png&timezone=US/Pacific\"\n    ]\n  ]\n}",
+  "summary_template": "{{#context}}\n<ul>\n  {{#if name}}\n    <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{name}}\">\n      <strong> Name: </strong> {{name}}\n    </li>\n  {{/if}}\n  {{#if filename}}\n    <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{filename}}\">\n      <strong> Dashboard: </strong> {{filename}}\n    </li>\n  {{/if}}\n  {{#if fabric}}\n    <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{fabric}}\">\n      <strong>Fabric: </strong> {{fabric}}\n    </li>\n  {{/if}}\n  {{#if zones}}\n   <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{zones}}\">\n    <strong>Zones: </strong> {{zones}}\n   </li>\n  {{/if}}\n  {{#if nodes}}\n    <li>\n      <strong>Nodes: </strong>\n      <ul>\n        {{#each nodes}}\n          <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{this}}\"> {{this}} </li>\n        {{/each}}\n      </ul>\n    </li>\n  {{/if}}\n</ul>\n{{/context}}\n",
+  "mobile_template": "{{#each zone_nodes}}\n  <graph-block src=\"{{this.[3]}}\" label=\"{{this.[0]}}\">\n{{else}}\n  <graph-block src=\"{{graph_image_url}}\" label=\"\">\n{{/each}}\n\n<ul class=\"context-list\">\n  <li class=\"context-item\">\n    <h1>Nodes</h1>\n    <ul>\n    {{#each nodes}}\n    <li>\n      <h2>{{this.[0]}}:</h2>\n      <p>{{this.[1]}}</p>\n    </li>\n    {{/each}}\n    </ul>\n  </li>\n  <li class=\"context-item\"><h1>Fabric</h1><b>{{fabric}}</b></li>\n  <li class=\"context-item\"><h1>Zones</h1>\n    <ul>\n    {{#each zones}}\n      <li>\n      <b>{{this}}</b>\n      </li>\n    {{/each}}\n    </ul>\n  </li>\n  <li class=\"context-item\"><h1>Dashboard</h1><b>{{filename}}</b></li>\n  {{#if notes}}\n    <li class=\"context-item\"><h1>Notes</h1>{{notes}}</li>\n  {{/if}}\n  {{#if itr_url}}\n    <li class=\"context-item\"><h1>ITR URL</h1><a href=\"{{itr_url}}\">{{itr_url}}</a></li>\n  {{/if}}\n  <li class=\"context-item\"><h1>Console URL</h1><a href=\"{{console_url}}\">{{console_url}}</a></li>\n</ul>",
+  "variables": [
+    "console_url",
+    "fabric",
+    "filename",
+    "graph_image_url",
+    "graph_url",
+    "itr_url",
+    "metanodes",
+    "name",
+    "nodes",
+    "notes",
+    "zones",
+    "zone_nodes"
+  ],
+  "required_variables": [],
+  "title_variable": "name",
+  "default_modes": {
+    "low": "email"
+  },
+  "supported_modes": ["sms", "im", "call", "email", "slack"],
+  "owners": ["user_foo"],
+  "custom_sender_addresses": {
+    "email": "alert@test.com"
+  },
+  "categories": [
+    {
+      "id": 5,
+      "name": "cat1",
+      "description": "category1",
+      "mode": "email"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+Copyright 2023 LinkedIn Corporation
+All Rights Reserved.
+Licensed under the BSD 2-Clause License (the "License").
+See LICENSE in the project root for license information.
+
+This product includes/uses [github.com/appleboy/go-fcm](https://github.com/appleboy/go-fcm)
+
+* Name: github.com/appleboy/go-fcm
+* Version: v0.1.5
+* License: [MIT](https://github.com/appleboy/go-fcm/blob/v0.1.5/LICENSE)
+
+
+This product includes/uses [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
+
+* Name: github.com/go-sql-driver/mysql
+* Version: v1.6.0
+* License: [MPL-2.0](https://github.com/go-sql-driver/mysql/blob/v1.6.0/LICENSE)
+
+
+This product includes/uses [github.com/golang/mock/gomock](https://github.com/golang/mock)
+
+* Name: github.com/golang/mock/gomock
+* Version: v1.6.0
+* License: [Apache-2.0](https://github.com/golang/mock/blob/v1.6.0/LICENSE)
+
+
+This product includes/uses [github.com/gorilla/websocket](https://github.com/gorilla/websocket)
+
+* Name: github.com/gorilla/websocket
+* Version: v1.4.2
+* License: [BSD-2-Clause](https://github.com/gorilla/websocket/blob/v1.4.2/LICENSE)
+
+
+This product includes/uses [github.com/julienschmidt/httprouter](https://github.com/julienschmidt/httprouter)
+
+* Name: github.com/julienschmidt/httprouter
+* Version: v1.3.0
+* License: [BSD-3-Clause](https://github.com/julienschmidt/httprouter/blob/v1.3.0/LICENSE)
+
+
+This product includes/uses [github.com/natefinch/lumberjack](https://github.com/natefinch)
+
+* Name: github.com/natefinch/lumberjack
+* Version: v2.0.0
+* License: [MIT](https://github.com/natefinch/lumberjack/blob/v2.0.0/LICENSE)
+
+
+This product includes/uses [github.com/pkg/errors](https://github.com/pkg/errors)
+
+* Name: github.com/pkg/errors
+* Version: v0.9.1
+* License: [BSD-2-Clause](https://github.com/pkg/errors/blob/v0.9.1/LICENSE)
+
+
+This product includes/uses [github.com/rcrowley/go-metrics](https://github.com/rcrowley/go-metrics)
+
+* Name: github.com/rcrowley/go-metrics
+* Version: v0.0.0-20201227073835-cf1acfcdf475
+* License: [BSD-2-Clause-FreeBSD](https://github.com/rcrowley/go-metrics/blob/cf1acfcdf475/LICENSE)
+
+
+This product includes/uses [github.com/robfig/cron](https://github.com/robfig/cron)
+
+* Name: github.com/robfig/cron
+* Version: v1.2.0
+* License: [MIT](https://github.com/robfig/cron/blob/v1.2.0/LICENSE)
+
+
+This product includes/uses [github.com/russross/blackfriday](https://github.com/russross/blackfriday)
+
+* Name: github.com/russross/blackfriday
+* Version: v1.6.0
+* License: [BSD-2-Clause](https://github.com/russross/blackfriday/blob/v1.6.0/LICENSE.txt)
+
+
+This product includes/uses [github.com/satori/go.uuid](https://github.com/satori/go.uuid)
+
+* Name: github.com/satori/go.uuid
+* Version: v1.2.0
+* License: [MIT](https://github.com/satori/go.uuid/blob/v1.2.0/LICENSE)
+
+
+This product includes/uses [github.com/slack-go/slack](https://github.com/slack-go/slack)
+
+* Name: github.com/slack-go/slack
+* Version: v0.10.2
+* License: [BSD-2-Clause](https://github.com/slack-go/slack/blob/v0.10.2/LICENSE)
+
+
+This product includes/uses [github.com/twilio/twilio-go](https://github.com/twilio/twilio-go)
+
+* Name: github.com/twilio/twilio-go
+* Version: v0.24.1
+* License: [MIT](https://github.com/twilio/twilio-go/blob/v0.24.1/LICENSE)
+
+
+This product includes/uses [go.uber.org/atomic](https://github.com/uber-go/atomic)
+
+* Name: go.uber.org/atomic
+* Version: v1.7.0
+* License: [MIT](https://github.com/uber-go/atomic/blob/v1.7.0/LICENSE.txt)
+
+
+This product includes/uses [go.uber.org/multierr](https://github.com/uber-go/multierr)
+
+* Name: go.uber.org/multierr
+* Version: v1.6.0
+* License: [MIT](https://github.com/uber-go/multierr/blob/v1.6.0/LICENSE.txt)
+
+
+This product includes/uses [go.uber.org/zap](https://github.com/uber-go/zap)
+
+* Name: go.uber.org/zap
+* Version: v1.21.0
+* License: [MIT](https://github.com/uber-go/zap/blob/v1.21.0/LICENSE.txt)

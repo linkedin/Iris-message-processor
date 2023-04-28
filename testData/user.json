@@ -1,0 +1,32 @@
+{
+  "name": "testuser",
+  "admin": true,
+  "template_overrides": ["sms"],
+  "category_overrides": {
+    "iris-test": {
+      "application_name": "iris-test",
+      "mode": "drop",
+      "category": "ignorable notification"
+    }
+  },
+  "modes": {},
+  "device": [
+    {
+      "registration_id": "FAKE-registration-id",
+      "user_id": 1234567,
+      "platform": "Android"
+    }
+  ],
+  "per_app_modes": {
+    "crt": {
+      "urgent": "slack"
+    }
+  },
+  "teams": [],
+  "contacts": {
+    "sms": "+1 858-123-4567",
+    "call": "+1 858-123-4567",
+    "email": "testuser@test.com",
+    "slack": "testuser"
+  }
+}

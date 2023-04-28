@@ -1,0 +1,99 @@
+[
+    {
+        "id": 5376371,
+        "plan": "critical",
+        "plan_id": 72838,
+        "active": 1,
+        "updated": null,
+        "application": "iris_app_foo",
+        "context": {
+            "site": null,
+            "type": "host::kernel",
+            "affected_devices": {
+                "host": [
+                    "kernel"
+                ]
+            },
+            "alerts": [
+                {
+                    "message": "2021-04-24T01:48:31+00:00 host kernel: [41677.738463] perf: interrupt took too long (6214 > 6213), lowering kernel.perf_event_max_sample_rate to 32000",
+                    "device": "foo",
+                    "type": "kernel",
+                    "component": ""
+                }
+            ],
+            "message": "[kernel] alerts in host",
+            "incident_id": 2322,
+            "dedupid": null,
+            "enrichment": null
+        },
+        "created": 1619254547,
+        "owner": null,
+        "current_step": 1,
+        "title_variable_name": "message",
+        "resolved": 0,
+        "title": "[kernel] alerts in host"
+    },
+    {
+        "id": 5376376,
+        "plan": "user_dcw_test_plan",
+        "plan_id": 72838,
+        "active": 1,
+        "updated": 1646448000,
+        "application": "alerts",
+        "context": {
+            "fabric": "production",
+            "console_url": "https://alert.com/#/alertdef/fabric/production?alertdef=free%20memory&filename=metricsfoo",
+            "filename": "metricsfoo",
+            "name": "Sample Test Alert",
+            "graph_image_url": "http://image.png",
+            "graph_url": "http://graphs.com/dashboard/metricsfoo/graph/free%20memory?fabrics=production&timezone=US/Pacific",
+            "zones": [
+                "zone1",
+                "zone2"
+            ],
+            "nodes": [
+                [
+                    "host",
+                    "threshold: 72 is greater than the max (65)"
+                ],
+                [
+                    "host2",
+                    "threshold: 84 is greater than the max (65)"
+                ]
+            ],
+            "metanodes": [
+                [
+                    "execution_time.metanode1",
+                    "threshold: 72 is greater than the max (65)"
+                ],
+                [
+                    "execution_time.metanode2",
+                    "threshold: 72 is greater than the max (65)"
+                ]
+            ],
+            "notes": "This is a note",
+            "itr_url": null,
+            "zone_nodes": [
+                [
+                    "zone_node_1",
+                    "https://alert.com/#/alertdef/fabric/production?alertdef=alerts%20SuppressionDB%20uwsgi%20500%20responses&filename=alerts",
+                    "http://graphs.com/dashboard/alerts/graph/alerts%20Alerting%20-%20Alert%20Error%20Rate?fabrics=production&timezone=US%2FPacific",
+                    "http://graphs.com/api/v2/img/dashboard/alerts/graph/alerts%20Alerting%20-%20Alert%20Error%20Rate?fabrics=production&legend=false&show_alerts&start=1528123709&end=1528152509&height=80&width=400&as_png&timezone=US/Pacific"
+                ],
+                [
+                    "zone_node_2",
+                    "https://alert.com/#/alertdef/fabric/production?alertdef=alerts%20SuppressionDB%20uwsgi%20500%20responses&filename=alerts",
+                    "http://graphs.com/dashboard/alerts/graph/alerts%20Alerting%20-%20Alert%20Error%20Rate?fabrics=production&timezone=US%2FPacific",
+                    "http://graphs.com/api/v2/img/dashboard/alerts/graph/alerts%20Alerting%20-%20Alert%20Error%20Rate?fabrics=production&legend=false&show_alerts&start=1528123709&end=1528152509&height=80&width=400&as_png&timezone=US/Pacific"
+                ]
+            ]
+        },
+        "created": 1619481816,
+        "owner": null,
+        "current_step": 2,
+        "title_variable_name": "name",
+        "resolved": 0,
+        "title": "Sample Test Alert"
+    }
+]

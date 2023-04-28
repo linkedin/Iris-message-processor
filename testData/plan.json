@@ -1,0 +1,51 @@
+{
+  "id": 72851,
+  "name": "iris-test-plan",
+  "threshold_window": 900,
+  "threshold_count": 10,
+  "aggregation_window": 300,
+  "aggregation_reset": 300,
+  "description": "",
+  "created": 1622002276,
+  "creator": "user_dcw",
+  "active": 1,
+  "tracking_type": "email",
+  "tracking_key": "user_dcw@test.com",
+  "tracking_template": {
+    "alerts": {
+      "email_subject": "aaa",
+      "email_text": "a",
+      "email_html": "a"
+    }
+  },
+  "steps": [
+    [
+      {
+        "id": 672653,
+        "step": 1,
+        "repeat": 1,
+        "wait": 240,
+        "optional": 0,
+        "role": "user",
+        "target": "testuser",
+        "template": "iris-test",
+        "priority": "medium",
+        "dynamic_index": null
+      }
+    ],
+    [
+      {
+        "id": 672654,
+        "step": 2,
+        "repeat": 0,
+        "wait": 0,
+        "optional": 0,
+        "role": "mailing-list",
+        "target": "monitoring-visualization-and-alerting",
+        "template": "aaa_awesome_sauce",
+        "priority": "urgent",
+        "dynamic_index": null
+      }
+    ]
+  ]
+}
