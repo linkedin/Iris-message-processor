@@ -1,9 +1,9 @@
 Iris-message-processor
 ========
 
-Iris-message-processor is a fully distributed Go application meant to replace the sender functionality of [Iris](https://github.com/linkedin/iris/tree/experimental) and provide reliable, scalable, and extensible incident and out of band message processing and sending.
+Iris-message-processor is a fully distributed Go application meant to replace the sender functionality of [Iris](https://github.com/linkedin/iris/tree/experimental-sender) and provide reliable, scalable, and extensible incident and out of band message processing and sending.
 
-Iris-message-processor is meant to be used with the [experimental-sender branch](https://github.com/linkedin/iris/tree/experimental) of Iris. Make sure you have set that up first before running Iris-message-processor.
+Iris-message-processor is meant to be used with the [experimental-sender branch](https://github.com/linkedin/iris/tree/experimental-sender) of Iris. Make sure you have set that up first before running Iris-message-processor.
 
 
 Set up database
@@ -29,7 +29,7 @@ The application configurations are defined in iris-message-processor/config/cfg.
 - "MySQLDBName":"iris_message_processor",
 
 ### Iris configurations:
-1. Make sure you have first configured and run an instance of Iris from the [experimental-sender branch](https://github.com/linkedin/iris/tree/experimental)
+1. Make sure you have first configured and run an instance of Iris from the [experimental-sender branch](https://github.com/linkedin/iris/tree/experimental-sender)
 1. create a new application "iris-message-processor" and copy the API key into the "IrisKey" configuration
 
 - "IrisBaseURL":"http://127.0.0.1:16649",
